@@ -1,0 +1,135 @@
+h1{
+  text-align: center;
+  font-weight: normal;
+  font-family: Times New Roman;
+  font-size: 30px;
+  color: #4966CE;
+  text-decoration: underline;
+  
+}
+#resumeheaders{
+  text-align: center;
+  font-weight: bold;
+  font-family: Times New Roman;
+  font-size: 30px;
+  color: black;
+}
+.resumeheader2{
+  text-align: left;
+  font-weight: bold;
+  font-family: Times New Roman;
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+}
+.resumeheader3{
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+    line-height: 4px;
+}
+h2{
+  text-align: center;
+  font-weight: lighter;
+  font-family: Times New Roman;
+  font-size: 16px;
+}
+img{
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 250px;
+    border-radius: 14px;
+    padding: 15px;
+    border: 2px solid #990099;
+    margin-top: 2%;
+    margin-right: 23%;
+}
+#mytable{
+	margin-left: 25%;
+    border-spacing:10px;
+	border-collapse:collapse;
+}
+#mytable, th, td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+}
+#myHeader {
+  background-color: lightblue;
+  background-image: url(headerpic.jpg);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  background-repeat: round;
+}
+#mytable2{
+	margin-left: 21%;
+    border-spacing:10px;
+	border-collapse:collapse;
+}
+body{
+    background-color: #FCF1FB;
+}
+#body2{
+    margin-top: 15px;
+    background-color: #FFF;
+    line-height: 50%;
+}
+#myTab{
+    text-align: center;
+    word-spacing: 10px;
+    text-decoration: none;
+}
+#myquote{
+    text-align: center;
+    font-family: Didot;
+    font-style: oblique;
+    color: darkorchid;
+}
+a:link {
+    color: pink;
+}
+a:visited {
+    color: deepskyblue;
+}
+a:hover {
+    color: greenyellow;
+}
+#mytable3{
+	margin-left: 40%;
+    border-spacing:10px;
+	border-collapse:collapse;
+}
+.table3 tr:nth-child(even){
+    background-color: #F6D7FF;
+}
+#indentation{
+    text-indent: 50px;
+}
+#indentation1{
+    text-indent: 50px;
+}
+#indentation2{
+    text-indent: 50px;
+}
+.left{
+    display:inline-block
+}
+.right{
+    display:inline-block; 
+    float:right
+}
+.lists{
+    list-style: disc;
+    list-style-position: outside;
+    line-height: normal;
+}
+.redandbold{
+    color: red;
+    font-weight: bold;
+}
+a.one{
+    color: red;
+    font-weight: bold;
+}
