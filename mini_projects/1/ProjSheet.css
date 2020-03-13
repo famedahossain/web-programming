@@ -255,3 +255,26 @@ ul.b {
     margin-left: 25%;
     margin-bottom: 5%;
 }
+
+/*Login*/
+.welcome{
+    text-align: center;
+    margin: auto;
+}
+.login{
+    border: 1px solid black;
+    
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.loginInputs{
+    text-align: center;
+    margin: auto;
+}
+
+.error{
+    color: red;
+    text-decoration: underline;
+}
