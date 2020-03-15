@@ -35,7 +35,10 @@ th{
 
 #categories{
     border: 1px solid black;
-    height:60%;
+    overflow: hidden;
+    height: 60%;
+    position: absolute;
+    margin: auto;
     float:left;
     width:15%;
     margin-top: 10%;
