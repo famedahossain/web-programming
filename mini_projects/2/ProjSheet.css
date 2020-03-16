@@ -35,12 +35,13 @@ th{
 
 #categories{
     border: 1px solid black;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: inherit;
     height: 60%;
     position: absolute;
     margin: auto;
     float:left;
-    width:15%;
+    width:18%;
     margin-top: 10%;
     box-shadow: 3px 3px 5px orange;
 }
@@ -88,9 +89,10 @@ ul.a {
     margin: auto;
     width: 50%;
     margin-top: inherit;
-    height: 100%;
+    height: auto;
     text-align: center;
     background-color: #fff4ed;
+    position: sticky;
 }
 
 .autoContent{
@@ -169,10 +171,17 @@ ul.a {
     background-color: #ffdfcc;
 }
 
-#itemImg{
-    width:100px;
+.cartTable{
+    overflow: hidden;
+    background-color: #ffdfcc;
+}
+
+
+.itemImg{
+    width:200px;
     height: auto;
     float: left;
+    clear: both;
 }
 
 ul.b {
@@ -225,13 +234,15 @@ ul.b {
     margin-right: auto;
 }
 
-#description{
+.description{
     border:1px solid black;
     width:50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     background-color: #f7f7f7;
+    align-content: center;
+    text-align:center;
 }
 
 #reviews{
@@ -256,10 +267,10 @@ ul.b {
 }
 
 #video{
-    width: 300px;
-    height: 200px;
-    margin-left: 25%;
-    margin-bottom: 5%;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    
 }
 
 #bodyforitems{
@@ -294,4 +305,8 @@ ul.b {
 
 #body3{
     background-color: #fff4ed;
+}
+
+#createAccount{
+    text-align: center;
 }

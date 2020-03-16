@@ -3,6 +3,7 @@ session_start();
 $username = fameda;
 $password = thisisabadpassword;
 $postback = $_POST['postback'];
+$_SESSION['isLogged'] = true;
 if(isset($_POST['submit'])){
     if($username != $_POST['user'] || $password != $_POST['password']){
         $postback = true;
@@ -22,11 +23,14 @@ if(isset($_POST['submit'])){
     else{
         $_SESSION['USER'] = $username;
         $_SESSION['PASS'] = $password;
-        header("location: ProjHome.html");
+        setcookie('username',$_SESSION['USER']);
+        header("location: ProjHome.php");
     }
 }
 elseif(isset($_POST['novalidate'])){
-    header("location: ProjHome.html");
+    $_SESSION['isLogged'] = false;
+    setcookie('logged',$_SESSION['isLogged']);
+    header("location: ProjHome.php");
 }
 elseif(isset($_POST['reset'])){
     header("location: login.php");
@@ -66,6 +70,14 @@ elseif(isset($_POST['reset'])){
                     <input type="submit" name="novalidate" value="Login as guest" formnovalidate>
                     <br>
                     <input type="submit" name="reset" value="Refresh Page">
+                    <br>
+                    <a href="CreateAccount.html">Don't have an account? Create one here!</a>
+                    
+                    <br>
+                    <br>
+                    Login: fameda
+                    <br>
+                    Password: thisisabadpassword
                 </div>
             </form>
         </div>

@@ -13,7 +13,7 @@ setcookie($quant,$quantity);
             <a href="ProjHome.html"><img alt="home" src="gohome.png"></a>
             <a href="AccountInfo.html"><img alt="account" src="user.png"></a>
         </div>
-    <div id="description">
+    <div class="description">
         <?php
             $price=1049;
             $amount=$price*$quantity;
@@ -24,13 +24,13 @@ setcookie($quant,$quantity);
             
         ?>
     </div>
-    <div id="description">
+    <div class="description">
         Select your payment method:
         <form name ="cardOption" method ="post" action ="items.php">
-          <input type="radio" id="default" name="card" value="default">
-          <label for="default">Default Card</label>
-          <input type="radio" id="alternate" name="card" value="alternate">
-          <label for="alternate">Alternate Card</label>
+          <input type="radio" id="credit" name="card" value="credit">
+          <label for="credit">Credit</label>
+          <input type="radio" id="debit" name="card" value="debit">
+          <label for="debit">Debit</label>
         <input type = "submit" value="Submit">
         </form>
     </div>

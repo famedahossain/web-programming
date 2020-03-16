@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="ProjSheet.css" type="text/css">
+        
+        <script type="text/javascript">
+            function validate(){
+                var fname = document.forms["account"]["first"].value;
+                
+                var lname = document.forms["account"]["last"].value;
+                
+                var emptyArr = [];
+                var emptyString = "";
+                
+                if(fname == "" || lname == ""){
+                    if(fname == ""){
+                      emptyArr.push('First Name');
+                    }
+                    if(lname == ""){
+                      emptyArr.push('Last Name');
+                    }
+                    
+                    for(var i =0; i < emptyArr.length;i++){
+                        emptyString = emptyString.concat(emptyArr[i] + ", ");
+                    }
+                    
+                    alert("You need to fill out these field(s): " + emptyString);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <a href=""><img id="amazonlogo" alt="Amazon Logo" src="amazonlogo.png"></a>
+            <a href="Cart.html"><img alt="cart" src="shopcart.png"></a>
+            <a href="AccountInfo.html"><img alt="account" src="user.png"></a>
+            <span id="headerAbout">
+            <h1>Create Account</h1>
+            </span>
+        </div>
+        
+        <div id="createAccount">
+            <form name="account" onsubmit="return validate()">
+                <table>
+                    <tr>
+                        <th><label>First Name:</label></th>
+                        <td><input type="text" name="first"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Last Name:</th>
+                        <td><input type="text" name="last"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label>Shipping Address: </label></th>
+                        <td><input type="text" name="shipping"></td>
+                    </tr>
+                        <th>Billing Address:</th>
+                        <td><input type="text" name="billing"></td>
+                    <tr>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <th>Payment Method:</th>
+                        <td><input type="radio" name="payment" value="Credit">Credit 
+                        <input type="radio" name="payment" value="Debit">Debit
+                        <input type="radio" name="payment" value="paypal">Paypal
+                        </td>
+                    </tr>
+                </table>
+                <input type="checkbox" name="conditions">Agree to Terms and Conditions
+                <br><br><br>
+                <input type="submit" value="Create Account">
+            </form>
+        </div>
+    </body>
+</html>
