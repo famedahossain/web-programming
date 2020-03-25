@@ -1,0 +1,52 @@
+.container{
+   background-color:#FFF;
+   border:1px solid #D94496;
+   font:12px Arial, sans-serif;
+   margin:20px auto;
+   width:550px;
+}
+
+body{
+   background-color:#f8d1ee;
+   font-family:arial;
+   font-size:12px;
+}
+
+h1{
+   font:12px arial;
+   margin-left:10px;
+   text-align: center;
+}
+
+#calender{
+   border-collapse:separate;
+   margin:5px 10px 10px;
+   padding: 3px;
+   letter-spacing: 2%; 
+}
+
+#calender .blank{
+   text-align:right;
+   width:40px;
+   font-size: 12px;
+}
+
+#calender .header{
+   color:#D94496;
+   font-size:12px;
+   font-weight:bold;
+   padding-left:5px;
+   text-align:center;
+   width:550px;
+}
+
+#calender .even{
+   background-color:#FFB6D5;
+   height:20px;
+}
+
+#calender .odd{
+   background-color:#FF99CC;
+   height:20px;
+}
+
