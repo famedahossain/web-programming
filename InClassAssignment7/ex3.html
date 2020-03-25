@@ -1,0 +1,21 @@
+<html>
+<head><title>Sort Array</title></head>
+<body>
+   <script type="text/javascript">
+        var arr1=[-3,8,7,6,5,-4,3,2,1];
+        document.write("Unsorted: "+ arr1 +"<br/>");
+        var larger,smaller = "";
+        for(var i=0; i<arr1.length; i++){
+            for(var j=i+1 ; j< arr1.length; j++) {
+                if(arr1[i]>arr1[j]){
+                    larger=arr1[i];
+                    smaller=arr1[j];
+                    arr1[i]=smaller;
+                    arr1[j]=larger;
+                }
+            }
+        }
+       document.write("Sorted: "+ arr1 +"<br/>");
+   </script>
+</body>
+</html>

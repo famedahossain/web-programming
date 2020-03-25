@@ -1,0 +1,23 @@
+<html>
+<head><title>Shuffle the Array</title></head>
+<body>
+   <script type="text/javascript">
+    var arr1 = [1,2,3,4,5,6];
+
+    function shuffleIt(array){
+    var temp;
+    var i=array.length;
+     while(i){
+        var m = Math.floor(Math.random()*i--);
+        temp = array[i];
+        array[i] = array[m];
+        array[m] = temp;
+      };
+        return array;
+    };
+    
+    document.write(shuffleIt(arr1));
+
+   </script>
+</body>
+</html>

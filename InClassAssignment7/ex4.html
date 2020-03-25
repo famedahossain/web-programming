@@ -1,0 +1,30 @@
+<html>
+<head><title>Most Frequent in Array</title></head>
+<body>
+   <script type="text/javascript">
+        var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        var control = [];
+        var count, largest = 0;
+        var output = "";
+       
+        document.write("The array: " + arr1 + "<br/>");
+       
+        for(var i = 0; i < arr1.length; i++) {
+            if(control[arr1[i]] != true){
+                for(var j = i; j < arr1.length; j++){
+                    if(arr1[i] == arr1[j]){
+                        count++;
+                    }
+                }
+                if(count > largest){
+                    largest = count;
+                    output = arr1[i] + " occurs " + count + " times ";
+                }
+                count = 0;
+            }
+            control[arr1[i]] = true;
+        }
+        document.write(output);
+   </script>
+</body>
+</html>

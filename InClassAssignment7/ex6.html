@@ -1,0 +1,52 @@
+<html>
+<head><title>Submit</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+       function validateIt(){
+           var x = document.forms["myform"]["id"].value;
+           var y = document.forms["myform"]["fname"].value;
+           var z = document.forms["myform"]["lname"].value;
+           
+           var arr = [];
+           var emptyString = "";
+           if( (x=="") || (y=="") || (z=="") ) {
+               if( (x=="") ){
+                   arr.push('id');
+                   //alert("Make sure to fill out the id");
+                   document.getElementById("errorId").innerHTML = "Please enter an ID";
+               }
+               if( (y=="") ){
+                   arr.push('first name');
+                   //alert("Make sure to fill out the first name");
+                   document.getElementById("thename").innerHTML = "Please enter a First Name";
+               }
+               if( (z=="") ){
+                   arr.push('last name');
+                   //alert("Make sure to fill out the last name"); 
+                   document.getElementById("lastname").innerHTML = "Please enter a Last Name";
+               }
+               for(var i=0; i<arr.length; i++){
+                   emptyString = emptyString.concat(arr[i]+", ");
+               }
+                alert("You forgot to fill in " + emptyString);
+               return false;
+        }
+           document.write(x+"<br>"); 
+            document.write(y+"<br>");
+            document.write(z+"<br>");
+           return true;
+       }
+
+   </script>    
+</head>
+<body>
+    <form id="submit" target="_self" name="myform" method="post" onsubmit="return validateIt()">
+        ID: <label id="errorId" style="color:red"></label><input type="text" name="id"><br>
+        First Name: <label id="thename" style="color:red"></label><input type="text" name="fname"><br>
+        Last Name: <label id="lastname" style="color:red"></label><input type="text" name="lname"><br>
+        <input type="submit" value="Add">
+    </form>
+    
+   
+</body>
+</html> 
