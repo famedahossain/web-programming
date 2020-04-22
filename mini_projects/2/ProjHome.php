@@ -78,7 +78,7 @@ if(isset($_COOKIE['username'])){
             <div class="autoContent"><img class="imgAuto" src="tv.jpg" alt="TV">TV's</div>
             <div class="autoContent"><img class="imgAuto" src="airpods.jpg" alt="Airpods">Earphones</div>
             <br> <br>
-            <a href="https://www.youtube.com/channel/UC5CR9_jcd61z9T-mRGZ30ew">Mini Project 2, Video</a>
+            <a href="https://youtu.be/ccYI0Kio6LU">Mini Project 2, Video</a>
             <p id="countdown"></p>
         </div>
     </body>
